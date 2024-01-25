@@ -1,0 +1,114 @@
+<!-- JavaScript Syntax -->
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <!-- JavaScript syntax is the set of rules, how JavaScript programs are constructed: -->
+
+    <!-- JavaScript Values
+The JavaScript syntax defines two types of values:
+
+Fixed values
+Variable values
+Fixed values are called Literals.
+
+Variable values are called Variables. -->
+
+    <!-- JavaScript Literals
+The two most important syntax rules for fixed values are:
+
+1. Numbers are written with or without decimals:-->
+
+    <h2>JavaScript Numbers</h2>
+
+    <p>Number can be written with or without decimals.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = 10.50;
+    </script>
+
+
+    <!-- 2. Strings are text, written within double or single quotes: -->
+
+    <h2>JavaScript Strings</h2>
+
+    <p>Strings can be written with double or single quotes.</p>
+
+    <p id="demo1"></p>
+
+    <script>
+        document.getElementById("demo1").innerHTML = 'John Doe';
+    </script>
+
+    <!-- JavaScript Variables
+In a programming language, variables are used to store data values.
+
+JavaScript uses the keywords var, let and const to declare variables.
+
+An equal sign is used to assign values to variables.
+
+In this example, x is defined as a variable. Then, x is assigned (given) the value 6: -->
+
+    <h2>JavaScript Variables</h2>
+
+    <p>In this example, x is defined as a variable.
+        Then, x is assigned the value of 6:</p>
+
+    <p id="variable"></p>
+
+    <script>
+        let x;
+        x = 6;
+        document.getElementById("variable").innerHTML = x;
+    </script>
+
+    <!-- JavaScript Operators
+JavaScript uses arithmetic operators ( + - * / ) to compute values: -->
+
+    <h2>JavaScript Operators</h2>
+
+    <p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+
+    <p id="operators"></p>
+
+    <script>
+        document.getElementById("operators").innerHTML = (5 + 6) * 10;
+    </script>
+
+    <!-- JavaScript Expressions -->
+
+    <!-- The values can be of various types, such as numbers and strings.
+
+For example, "John" + " " + "Doe", evaluates to "John Doe": -->
+
+
+    <h2>JavaScript Expressions</h2>
+
+    <p>Expressions compute to values.</p>
+
+    <p id="Expressions"></p>
+
+    <script>
+        document.getElementById("Expressions").innerHTML = "John" + " " + "Doe";
+    </script>
+
+    <!-- The var keyword also tells the browser to create variables: -->
+
+    <h2>The var Keyword Creates Variables</h2>
+
+    <p id="demo3"></p>
+
+    <script>
+        var z, y;
+        z = 5 + 6;
+        y = z * 10;
+        document.getElementById("demo3").innerHTML = y;
+    </script>
+
+</body>
+
+</html>

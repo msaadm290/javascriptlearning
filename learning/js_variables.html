@@ -1,0 +1,114 @@
+<!-- Variables are Containers for Storing Data
+JavaScript Variables can be declared in 4 ways:
+
+Automatically
+Using var
+Using let
+Using const -->
+
+<!-- In this first example, x, y, and z are undeclared variables.
+
+They are automatically declared when first used: -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Variables</h1>
+
+<p>In this example, x, y, and z are undeclared.</p>
+<p>They are automatically declared when first used.</p>
+
+<p id="value"></p>
+
+<script>
+x = 5;
+y = 6;
+z = x + y;
+document.getElementById("value").innerHTML =
+"The value of z is: " + z;
+</script>
+
+
+<!-- Note
+It is considered good programming practice to always declare variables before use. -->
+
+
+<!-- Note
+The var keyword was used in all JavaScript code from 1995 to 2015.
+
+The let and const keywords were added to JavaScript in 2015.
+
+The var keyword should only be used in code written for older browsers.
+
+-->
+
+<!-- Mixed Example -->
+
+
+<h1>JavaScript Variables</h1>
+
+<p>In this example, price1, price2, and total are variables.</p>
+
+<p id="value1"></p>
+
+<script>
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+document.getElementById("value1").innerHTML =
+"The total is: " + total;
+
+
+var name = "helo";
+var name = "test";
+
+let fname = "fname";
+fname = "anchdf"
+// let fname = "abc";
+
+const lname = "lname"
+// lname = "llkajsdf"
+
+function testing(){
+    // var test = "hello world";
+    console.log(fname)
+    console.log(lname)
+}
+
+// console.log('test',test)
+// let lname = "helo2";
+// const fname = "helofname";
+
+testing()
+
+console.log(name,lname,fname)
+</script>
+
+<!-- The two variables price1 and price2 are declared with the const keyword.
+
+These are constant values and cannot be changed.
+
+The variable total is declared with the let keyword.
+
+The value total can be changed. -->
+
+<!-- When to Use var, let, or const?
+1. Always declare variables
+
+2. Always use const if the value should not be changed
+
+3. Always use const if the type should not be changed (Arrays and Objects)
+
+4. Only use let if you can't use const
+
+5. Only use var if you MUST support old browsers. -->
+
+<!-- Note
+Variables are containers for storing values. -->
+
+
+
+
+</body>
+</html>
+
