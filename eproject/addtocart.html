@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+
+  <div>
+    <h2>Product Details</h2>
+    <img src="./imeges1/phone_img.png" width="300" height="200" alt="simple image">
+    <!-- <img src="product_image.jpg" alt="Product Image"> -->
+    <p id="productName">Apple Iphone 15</p>
+    <p id="productPrice">$900.00</p>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <h2>Your Cart</h2>
+  <table id="cartTable">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Amount</th>
+        <th>QTY</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="cartBody">
+      <tr>
+        <td>Apple Iphone 15</td>
+        <td>$900.00</td>
+        <td><button>+</button> 1 <button>-</button></td>
+        <td><button>remove</button></td>
+      </tr>
+      <!-- Cart items will be added here dynamically -->
+    </tbody>
+  </table>
+
+  <script>
+    function addToCart() {
+      // Get product details
+      const productName = document.getElementById('productName').textContent;
+      const productPrice = document.getElementById('productPrice').textContent;
+
+      // Create a new row for the cart table
+      let cartRow = document.createElement('tr');
+
+      // Create cells for the row
+      let productNameCell = document.createElement('td');
+      let amountCell = document.createElement('td');
+
+      // Set the content of the cells
+      productNameCell.textContent = productName;
+      amountCell.textContent = productPrice;
+
+      // Append cells to the row
+      cartRow.appendChild(productNameCell);
+      cartRow.appendChild(amountCell);
+
+      // Append the row to the cart table
+      document.getElementById('cartBody').appendChild(cartRow);
+    }
+  </script>
+
+</body>
+
+</html>
